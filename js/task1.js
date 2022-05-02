@@ -62,3 +62,30 @@
 //   }
 //   console.log('min', min)
 // }
+//
+
+//  const style = ['jazz', 'blue', 'rap', 'Reggae']
+//  const style1 = ['ja22z', '22lue', 'r22ap', 'Regg222ae']
+//  const numbers = [1, 2, 4, 5, 8 , 9 , 3]
+//
+// const newArray = style.concat(style1, 222)
+//  console.log(newArray)
+//
+//
+
+const names = 'Jacob,William,Solomon,Artemis';
+const phones = '89001234567,89001112233,890055566377,890055566300';
+
+const namesArray = names.split(',')
+const phonesArray = phones.split(',')
+const copyNamesArr = [...namesArray]
+
+ console.log(copyNamesArr === copyNamesArr)
+
+
+ for (let i = 0; i <= namesArray.length; i += 1){
+
+   console.log(`${namesArray[i]} : ${phonesArray[i]}`)
+ }
+
+
