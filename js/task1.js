@@ -73,19 +73,66 @@
 //
 //
 
-const names = 'Jacob,William,Solomon,Artemis';
-const phones = '89001234567,89001112233,890055566377,890055566300';
+// const names = 'Jacob,William,Solomon,Artemis';
+// const phones = '89001234567,89001112233,890055566377,890055566300';
+//
+// const namesArray = names.split(',')
+// const phonesArray = phones.split(',')
+// const copyNamesArr = [...namesArray]
+//
+//  console.log(copyNamesArr === copyNamesArr)
+//
+//
+//  for (let i = 0; i <= namesArray.length; i += 1){
+//
+//    console.log(`${namesArray[i]} : ${phonesArray[i]}`)
+//  }
+//
+//
 
-const namesArray = names.split(',')
-const phonesArray = phones.split(',')
-const copyNamesArr = [...namesArray]
+ // Напиши скрипт який виводить у консоль усі слова рядка крім першого та останнього.
+ // // Результуючий рядок не повинен починатися або закінчуватися пробілом.
+ // // Скрипт повинен працювати для будь-якого рядка.
 
- console.log(copyNamesArr === copyNamesArr)
+// const str = 'Welcome to the future my friend!';
+//
+// const strToArr = str.split(' ');
+//
+// // strToArr.pop();
+// // strToArr.shift();
+//
+//  strToArr.slice(1,-1).join(" ");
+//
+// console.log(strToArr);
+//
 
+ // Напиши скрипт, який «розвертає» рядок (зворотний порядок букв) і виводить його в консоль.
 
- for (let i = 0; i <= namesArray.length; i += 1){
+// const string = 'Welcome to the future!';
+//
+// let revStr = "";
+//
+//  for (let i = string.length - 1; i >= 0; i -= 1) {
+//
+//    revStr += string[i]
+//  }
+//
+//  console.log(revStr)
 
-   console.log(`${namesArray[i]} : ${phonesArray[i]}`)
- }
+ // Опертор % и методи рядків
 
+ // Напиши скрипт, який переведе значення totalMinutes (кількість хвилин) у рядок у форматі годин і хвилин HH:MM
 
+ // 70 покаже 01:10
+ // 450 покаже 07:30
+ // 1441 покаже 24:01
+
+ // const totalMinutes = 60;
+ //
+ // const hours = Math.floor(totalMinutes / 60);
+ // const min = totalMinutes % 60;
+ //
+ // const minFull = String(min).padStart(2, 0);
+ // const hoursFull = String(hours).padStart(2, 0);
+ //
+ // console.log(`${hoursFull}:${minFull}`);
