@@ -136,3 +136,63 @@
  // const hoursFull = String(hours).padStart(2, 0);
  //
  // console.log(`${hoursFull}:${minFull}`);
+
+ // Task 3
+ // Використовуючи конструкцію if..else, напишіть код, який запитуватиме: "What is the official name of JavaScript?". Якщо користувач вводить "ECMAScript", то показати: "Yep!",
+ //
+ // const userAnswer = prompt("What is the official name of JavaScript?")
+
+// if (userAnswer === 'ECMAScript'){
+//  alert("Yap")
+//
+// } else {
+//   alert("Don't you know? ECMAScript!")
+// }
+
+ // Напиши скрипт для відображення годин та хвилин у консолі браузера у вигляді рядка формату "14 год. 26 хв.". Якщо значення змінної minutes дорівнює 0, то виводь рядок "14 год.", без хвилин.
+
+// const hours = 14;
+// const minutes = 323;
+// let timeString;
+//
+//
+// if (minutes === 0){
+//   timeString = `${hours} год`
+// } else {
+//   timeString = `${hours} год: ${minutes} хв`
+// }
+//
+//  console.log(timeString);
+
+ // Напиши скрипт, який виводить у консоль рядок "Це позитивне число", якщо в prompt користувач ввів число більше за нуль.
+ // Якщо введено нуль, виводь у консоль рядок "Це нуль".
+ // Якщо передали від'ємне число, у консолі має бути рядок "Це від'ємне число".
+
+// const userInput = Number(prompt('Введіть число'));
+//
+// if (userInput > 0){
+//
+// console.log("Це позитивне число")
+//
+// }  else if  (userInput  === 0){
+//  console.log("Це нуль")
+// }
+// else  {
+// console.log("Це від'ємне число")
+// }
+
+ // Напиши скрипт, який порівнює числа змінних a і b.
+ // Якщо обидва значення більше 100, виведи в консоль максимальне з них.
+ // Інакше у консолі має бути сума значення b та числа 512.
+
+const a = 20;
+const b = 180;
+
+if (a > 100 && b > 100){
+
+  console.log(Math.max(a,b))
+
+} else  {
+
+  console.log(b + 512)
+}
