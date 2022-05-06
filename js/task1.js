@@ -267,7 +267,7 @@
 //  for (let i = max; i >= min ; i-= 1) {
 //    console.log(i)
 //  }
-
+//  tast 4
  // * Приклад 3 - Запитати у користувача число 3 рази (`Enter a number #${currentCount} of ${totalCount}`)
  // * Порахувати суму цих чисел і вивести на екран (`Total sum is ${sum}`)
  // * Якщо користувач натиснув Cancel, необхідно зупинити цикл і вивести на екран повідомлення ('You finished the game').
