@@ -185,14 +185,68 @@
  // Якщо обидва значення більше 100, виведи в консоль максимальне з них.
  // Інакше у консолі має бути сума значення b та числа 512.
 
-const a = 20;
-const b = 180;
+// const a = 20;
+// const b = 180;
+//
+// if (a > 100 && b > 100){
+//
+//   console.log(Math.max(a,b))
+//
+// } else  {
+//
+//   console.log(b + 512)
+// }
 
-if (a > 100 && b > 100){
+ // Напиши скрипт який перевіряє чи закінчується значення змінної link символом /.
+ // Якщо ні, додай до кінця значення link цей символ.
+ // Використовуй конструкцію if...else.
 
-  console.log(Math.max(a,b))
+// let link = 'https://my-site.com/about';
+//
 
-} else  {
 
-  console.log(b + 512)
-}
+ // Напиши скрипт який перевіряє чи закінчується значення змінної link символом /.
+ // Якщо ні, додай у кінець значення link цей символ, але тільки в тому випадку, якщо в link є підрядок "my-site".
+ // Використовуй конструкцію if...else.
+
+// let link = 'https://my-sit5e.com/about';
+
+ // if (! link.endsWith("/") && link.includes("my-site")){
+ //   link += '/'
+ // }
+
+// const res =  ! link.endsWith("/") && link.includes("my-site") ? link += '/' : link += 'Pidar'
+//  console.log(res)
+//
+//  // Task Switch
+
+
+ // if (car === 'Audi' || car === 'BMW' || car === 'Opel') {
+ //   console.log('Good car!');
+ // } else if (car === 'Zaporozhets' || car === 'Tractor') {
+ //   console.log('Will do for the countryside');
+ // } else {
+ //   console.log('Footpassenger');
+ // }
+
+// const car = 'Opel';
+// switch (car){
+//     case'Audi' :
+//     case'BMW' :
+//     case'Opel' :
+//        console.log('Good car!');
+//        break;
+//     case 'Zaporozhets':
+//     case 'Tractor' :
+//       console.log('Will do for the countryside');
+//       break;
+//     default :
+//       console.log('Footpassenger');
+// }
+
+ // Приклад 1 - Цикл for
+ // Напиши цикл for який виводить у консоль браузера числа за зростанням від min до max, але тільки якщо число кратне 5.
+
+const min = 20;
+const max = 50;
+
