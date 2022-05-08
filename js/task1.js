@@ -302,19 +302,37 @@
 // виводити Fizz замість чисел, кратних 3;
 // виводити Buzz замість чисел, кратних 5;
 // виводити Fizzbuzz замість чисел, кратних як 3, так і 5.
+ //
+ // for (let i =  1; i <= 100; i +=1){
+ // if(i % 3 === 0 && i % 5 === 0){
+ //   console.log('Fizzbuzz')
+ // } else if (i % 5 === 0){
+ //   console.log("Buzz")
+ // }else if (i % 3 === 0 ){
+ //   console.log("Fizz")
+ // } else {
+ //   console.log(i)
+ // }
+ //  }
+ //
+ //
 
+ // * Є масив із числами.
+ // Створіть із нього новий масив, де залишаться лежати лише позитивні числа.
+ // Створіть для цього допоміжну функцію ,яка параметром прийматиме число і повертатиме true, якщо число позитивне, і false - якщо негативне.
+ // */
 
+ const array = [1, 2, 3, -1, -2, -3];
+ const newArray = [];
 
-for (let i =  1; i <= 100; i +=1){
-if(i % 3 === 0 && i % 5 === 0){
-  console.log('Fizzbuzz')
-} else if (i % 5 === 0){
-  console.log("Buzz")
-}else if (i % 3 === 0 ){
-  console.log("Fizz")
-} else {
-  console.log(i)
+function isPositive(number) {
+  return number > 0;
 }
- }
 
+for (const i of array){
+  if (isPositive(i)){
+    newArray.push(i)
+  }
+}
 
+ console.log(newArray)
