@@ -321,18 +321,32 @@
  // Створіть із нього новий масив, де залишаться лежати лише позитивні числа.
  // Створіть для цього допоміжну функцію ,яка параметром прийматиме число і повертатиме true, якщо число позитивне, і false - якщо негативне.
  // */
+//
+//  const array = [1, 2, 3, -1, -2, -3];
+//  const newArray = [];
+//
+// function isPositive(number) {
+//   return number > 0;
+// }
+//
+// for (const i of array){
+//   if (isPositive(i)){
+//     newArray.push(i)
+//   }
+// }
+//
+//  console.log(newArray)
 
- const array = [1, 2, 3, -1, -2, -3];
- const newArray = [];
+ // * Є двомірний масив з числами, наприклад [[1, 2, 3], [4, 5], [6]]. Знайдіть суму елементів цього масиву. Масив, звичайно, може бути довільним.
+ // */
 
-function isPositive(number) {
-  return number > 0;
-}
+ const array = [[1, 2, 3], [4, 5], [6]];
+ let total = 0;
 
 for (const i of array){
-  if (isPositive(i)){
-    newArray.push(i)
+  for (const number of i ){
+
+    total += number
   }
 }
-
- console.log(newArray)
+ console.log(total)
