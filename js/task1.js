@@ -268,9 +268,53 @@
 //    console.log(i)
 //  }
 //  tast 4
- // * Приклад 3 - Запитати у користувача число 3 рази (`Enter a number #${currentCount} of ${totalCount}`)
- // * Порахувати суму цих чисел і вивести на екран (`Total sum is ${sum}`)
- // * Якщо користувач натиснув Cancel, необхідно зупинити цикл і вивести на екран повідомлення ('You finished the game').
- // * Якщо ввів не число, то вивести на екран повідомлення (`${userAnswer} is not a number! Try again`) і перервати цю ітерацію
- // */
+
+
+ // Напишіть код, який запитуватиме логін за допомогою prompt і логуватиме результат у консоль браузера.
+ // - Якщо відвідувач вводить "admin", то prompt запитує пароль
+ // - Якщо нічого не введено або натиснуто клавішу Esc – вивести рядок "Cancelled"
+ // - В іншому випадку вивести рядок "I don't know you"
+ // Пароль перевіряти так:
+ // - Якщо введено пароль "boss", вивести рядок "Welcome!"
+ // - Інакше виводити рядок "Wrong password"
  //
+ //
+
+
+// const login = prompt('Enter login');
+//
+// if (login.toLowerCase() === 'admin'){
+//   const password =  prompt('Write the password')
+//   if (password.toLowerCase() === "boss"){
+//     alert('Welcome')
+//   } else {
+//     alert('Wrong password')
+//   }
+// } else  if (login.toLowerCase() === null || login.toLowerCase() === ""){
+//   alert("Cancelled")
+// } else {
+//   alert("I don't know you")
+// }
+
+// FIZZBAZZ
+
+// Напишіть програму, яка виводить через console.log усі цифри від 1 до 100, з трьома винятками:
+// виводити Fizz замість чисел, кратних 3;
+// виводити Buzz замість чисел, кратних 5;
+// виводити Fizzbuzz замість чисел, кратних як 3, так і 5.
+
+
+
+for (let i =  1; i <= 100; i +=1){
+if(i % 3 === 0 && i % 5 === 0){
+  console.log('Fizzbuzz')
+} else if (i % 5 === 0){
+  console.log("Buzz")
+}else if (i % 3 === 0 ){
+  console.log("Fizz")
+} else {
+  console.log(i)
+}
+ }
+
+
