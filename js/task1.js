@@ -322,7 +322,7 @@
  // Створіть для цього допоміжну функцію ,яка параметром прийматиме число і повертатиме true, якщо число позитивне, і false - якщо негативне.
  // */
 //
-//  const array = [1, 2, 3, -1, -2, -3];
+//  const array = [1, 2, 3, -1, -2, -3, -5];
 //  const newArray = [];
 //
 // function isPositive(number) {
@@ -337,16 +337,33 @@
 //
 //  console.log(newArray)
 
+
+//  Task двомірний масив
+
  // * Є двомірний масив з числами, наприклад [[1, 2, 3], [4, 5], [6]]. Знайдіть суму елементів цього масиву. Масив, звичайно, може бути довільним.
  // */
 
- const array = [[1, 2, 3], [4, 5], [6]];
- let total = 0;
+//  const array = [[1, 2, 3], [4, 5], [6]];
+//  let total = 0;
+//
+// for (const i of array){
+//   for (const number of i ){
+//
+//     total += number
+//   }
+// }
+//  console.log(total)
 
-for (const i of array){
-  for (const number of i ){
+ // Task 7
+ // * Дано рядок, що складається із символів, наприклад, '  abcde '.
+ // Перевірте, що першим символом цього рядка є буква 'a'. Якщо це так - виведіть 'так', інакше виведіть 'ні'.
 
-    total += number
-  }
-}
- console.log(total)
+let text = '  bcde ';
+text= text.trim()
+
+if (text.startsWith('a')){
+  console.log('так')
+} else
+ console.log('ні')
+
+
