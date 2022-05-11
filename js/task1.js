@@ -358,12 +358,66 @@
  // * Дано рядок, що складається із символів, наприклад, '  abcde '.
  // Перевірте, що першим символом цього рядка є буква 'a'. Якщо це так - виведіть 'так', інакше виведіть 'ні'.
 
-let text = '  bcde ';
-text= text.trim()
+// let text = '  bcde ';
+// text= text.trim()
+//
+// if (text.startsWith('a')){
+//   console.log('так')
+// } else
+//  console.log('ні')
+//
+//
+//  Task 8
+ // * У змінній min лежить число від 0 до 59.Визначте, в яку чверть години потрапляє це число (у першу, другу, третю чи четверту).
+ // */
+ // let min = 40;
+ //
+ // if (min >= 0 && min <= 14){
+ //   console.log('1 part')
+ // } else if (min >= 15 && min <= 29){
+ //   console.log('2 part')
+ // }else if (min >= 30 && min <= 44){
+ //   console.log('3 part')
+ // } else {
+ //   console.log('4 part')
+ // }
 
-if (text.startsWith('a')){
-  console.log('так')
-} else
- console.log('ні')
+// Task Object
 
+//  const apartment = {
+//    imgUrl: "https://via.placeholder.com/640x480",
+//    descr: "Spacious apartment in the city center",
+//    rating: 4,
+//    price: 2153,
+//    tags: ["premium", "promoted", "top"],
+//    owner: {
+//      name: "Henry",
+//      phone: "982-126-1588",
+//      email: "henry.carter@aptmail.com",
+//    },
+//  };
+//
+// for (const key in apartment){
+//   console.log(apartment[key])
+// }
 
+ const keys = [];
+ const values = [];
+
+   const advert = {
+     service: "apt",
+   };
+
+ const apartment = Object.create(advert);
+
+   apartment.descr = "Spacious apartment in the city center";
+   apartment.rating = 4;
+   apartment.price = 2153;
+
+ for (const key in advert) {
+    if(advert.hasOwnProperty(key)){
+      keys.push(key);
+      values.push(advert[key]);
+    }
+ }
+ console.log(advert)
