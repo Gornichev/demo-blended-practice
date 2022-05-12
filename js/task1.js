@@ -384,40 +384,78 @@
 
 // Task Object
 
-//  const apartment = {
-//    imgUrl: "https://via.placeholder.com/640x480",
-//    descr: "Spacious apartment in the city center",
-//    rating: 4,
-//    price: 2153,
-//    tags: ["premium", "promoted", "top"],
-//    owner: {
-//      name: "Henry",
-//      phone: "982-126-1588",
-//      email: "henry.carter@aptmail.com",
-//    },
-//  };
+ // const apartment = {
+ //   imgUrl: "https://via.placeholder.com/640x480",
+ //   descr: "Spacious apartment in the city center",
+ //   rating: 4,
+ //   price: 2153,
+ //   tags: ["premium", "promoted", "top"],
+ //   owner: {
+ //     name: "Henry",
+ //     phone: "982-126-1588",
+ //     email: "henry.carter@aptmail.com",
+ //   },
+ // };
+ //
+ // const keys = Object.keys(apartment)
+ //
+ // for (const key of keys){
+ //   console.log(`${key} -----${apartment[key]}`)
+ // }
+ //
+
 //
 // for (const key in apartment){
 //   console.log(apartment[key])
 // }
 
- const keys = [];
- const values = [];
+ // const keys = [];
+ // const values = [];
+ //
+ //   const advert = {
+ //     service: "apt",
+ //   };
+ //
+ // const apartment = Object.create(advert);
+ //
+ //   apartment.descr = "Spacious apartment in the city center";
+ //   apartment.rating = 4;
+ //   apartment.price = 2153;
+ //
+ // for (const key in advert) {
+ //    if(advert.hasOwnProperty(key)){
+ //      keys.push(key);
+ //      values.push(advert[key]);
+ //    }
+ // }
+ // console.log(advert)
 
-   const advert = {
-     service: "apt",
-   };
+ // function countProps(object) {
+ //   let propCount = 0;
+ //   // Change code below this line
+ //   for (let key in object){
+ //     if(object.hasOwnProperty(key)){
+ //       propCount ++
+ //     }
+ //
+ //   }
+ //   // Change code above this line
+ //   return propCount;
+ // }
+ const colors = [
+   { hex: "#f44336", rgb: "244,67,54" },
+   { hex: "#2196f3", rgb: "33,150,243" },
+   { hex: "#4caf50", rgb: "76,175,80" },
+   { hex: "#ffeb3b", rgb: "255,235,59" },
+ ];
 
- const apartment = Object.create(advert);
+ const hexColors = [];
+ const rgbColors = [];
 
-   apartment.descr = "Spacious apartment in the city center";
-   apartment.rating = 4;
-   apartment.price = 2153;
 
- for (const key in advert) {
-    if(advert.hasOwnProperty(key)){
-      keys.push(key);
-      values.push(advert[key]);
-    }
+ // Change code below this line
+ for (const color of colors){
+   hexColors.push(color.hex)
+   rgbColors.push(color.rgb)
  }
- console.log(advert)
+ console.log(hexColors , rgbColors)
