@@ -521,10 +521,6 @@
 
   // Change code above this line
 
-  // return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
-}
-
-
 // calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} })
 //
 // const scores = [89, 64, 42, 17, 93, 51, 26];
@@ -536,9 +532,4 @@
 //
 // console.log(Math.max(...scores))
 //
-
-// const temp = [1,32,4,4]
-//
-// const copyTemp = [...temp]
-// console.log(copyTemp)
 
