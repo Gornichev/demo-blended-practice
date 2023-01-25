@@ -522,14 +522,70 @@
   // Change code above this line
 
 // calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} })
-//
+// //
 // const scores = [89, 64, 42, 17, 93, 51, 26];
 // // Change code below this line
-//
-//
+
+
 // const bestScore = Math.max(...scores);
 // const worstScore = Math.min(...scores);
 //
-// console.log(Math.max(...scores))
-//
+// console.log(Math.min(...scores))
+// // code
 
+// const newArray = [];
+// function checkNumber(number) {
+//   if(checkNumber > 0) {
+//     newArray.push(checkNumberf)
+//   }
+//   return newArray
+// }
+//
+// checkNumber(3)
+// console.log(newArray)
+
+
+
+// const hasEggs = true;
+// const hasFlour = true;
+// const hasSugar = true;
+//
+// const canMakeCake = hasEggs && hasFlour && hasSugar; // don't change this line
+//
+// console.log(canMakeCake)
+
+// Change code below this line
+// Change code below this line
+// const pricePerDroid = 800;
+// const orderedQuantity = 6;
+// const deliveryFee = 50;
+// const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
+// const message = `You ordered droids worth ${totalPrice} credits. Delivery
+// (${deliveryFee} credits) is included in total price.`;
+//
+//
+// console.log(message)
+
+// const productName = "Droid";
+// const pricePerItem = 3500;
+//
+// // Change code below this line
+// const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+//
+//
+// console.log(message
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   if (ordered > available)
+//     message = "Not enough goods in stock!"
+//   else
+//     message = "Order is processed, our manager will contact you."
+//
+//
+//     // Change code above this line
+//     return message;
+//
+// }
+//
+// console.log(checkStorage(100, 130))
