@@ -589,3 +589,47 @@
 // }
 //
 // console.log(checkStorage(100, 130))
+
+
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+//   switch(country){
+//     case "China" :
+//       message = `Shipping to China> will cost 100`
+//       break;
+//
+//     case "Chile" :
+//       message = `Shipping to Chile> will cost 250`
+//       break;
+//
+//     case "Australia" :
+//       message = `Shipping to Chile> will cost 170`;
+//       break;
+//
+//     case "Jamaica" :
+//       message = `Shipping to Jamaica  will cost 120`;
+//
+//       message = "Sorry, there is no delivery to your country";
+//
+//   }
+//
+//   // Change code above this line
+//   return message;
+// }
+
+// function getSubstring(string, length) {
+//   return string.slice(0, length);
+// }
+//
+// console.log(getSubstring("Hello world", 3))
+//
+// // "Hel"
+
+let num = 100;
+
+let newNum = String(num)
+console.log(typeof newNum)
+console.log(typeof num)
+
+
