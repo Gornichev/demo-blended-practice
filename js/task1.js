@@ -625,11 +625,38 @@
 // console.log(getSubstring("Hello world", 3))
 //
 // // "Hel"
+// const num = "100.233"
+//
+// const st = parseFloat(num)
+//
+// console.log(st)
+// const cars = ["mazda", "opel", "skoda","renault"]
+//
+// console.log(cars.pop())
 
-let num = 100;
+//
+//
+// if (cars.includes("opel"))
+//
+//   cars.push("bike", "mtb")
+//
+//   else
+//   console.log("fack")
+//
+// console.log(cars)
 
-let newNum = String(num)
-console.log(typeof newNum)
-console.log(typeof num)
+function formatMessage(message, maxLength) {
+  let result;
+  if(message.length < maxLength){
+    result = message
+  } else {
+    result = `${message.slice(0,maxLength)}...`
+  }
 
+  return result;
+}
+//
+// console.log(formatMessage("Curabitur ligula sapien", 16))
+
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))
 
