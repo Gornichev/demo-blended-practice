@@ -632,6 +632,9 @@
 // console.log(st)
 // const cars = ["mazda", "opel", "skoda","renault"]
 //
+// cars.splice(0,1,"Jeep")
+// console.log(cars)
+// //
 // console.log(cars.pop())
 
 //
@@ -645,18 +648,49 @@
 //
 // console.log(cars)
 
-function formatMessage(message, maxLength) {
-  let result;
-  if(message.length < maxLength){
-    result = message
-  } else {
-    result = `${message.slice(0,maxLength)}...`
-  }
-
-  return result;
-}
+// function formatMessage(message, maxLength) {
+//   let result;
+//   if(message.length < maxLength){
+//     result = message
+//   } else {
+//     result = `${message.slice(0,maxLength)}...`
+//   }
 //
-// console.log(formatMessage("Curabitur ligula sapien", 16))
+//   return result;
+// }
+// //
+// // console.log(formatMessage("Curabitur ligula sapien", 16))
+//
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41))
+// console.log(formatMessage("Vestibulum facilisis purus nec", 30))
 
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15))
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   // Change code below this line
+//
+//   let message;
+//
+//   if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   }
+//
+//   return "Access denied, wrong password!";
+//
+// }
+
+
+function checkStorage(available, ordered) {
+  // Change code below this line
+
+  if (ordered === 0) {
+    return  "Your order is empty!";
+
+  } if (ordered > available) {
+    return "Your order is too large, not enough goods in stock!";
+  }
+    return  "The order is accepted, our manager will contact you";
+
+}
+console.log(checkStorage(100, 130))
 
