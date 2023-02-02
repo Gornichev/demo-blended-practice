@@ -725,18 +725,26 @@
 
 // const fruits = ["apple","orange", "lemon", "kiwi"]
 //
+// for (let fruit of fruits) {
 //
-//
-//
+//   console.log(fruit[0].toUpperCase() + fruit.slice(1))
+// }
+
 // for (let i = 0;i <fruits.length; i += 1){
 //   // const user = i[0].toUpperCase() + fruits.slice(1);
 //
 //   console.log(i)
 // }
+
 //
 //
+// const user = "vova"
+//
+// console.log(user[0].toUpperCase() + user.slice(1))
+const num = "uncle"
 
-const user = "vova"
+const numToArray = Array.from(num)
 
-console.log(user[0].toUpperCase() + user.slice(1))
+const sas = numToArray.toString();
 
+console.log(typeof sas)
