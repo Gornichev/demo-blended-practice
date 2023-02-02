@@ -723,7 +723,31 @@
 // }
 // console.log(calculateEngravingPrice("JavaScript is in my blood", 10))
 
-// const fruits = ["apple","orange", "lemon", "kiwi"]
+let fruits = ["apple","orange", "lemon", "kiwi", "strawberries", "banana"]
+
+const newArr =  fruits.splice(0,2,"watermelon", "item")
+const cars = ["bmw","audi"]
+
+console.log(cars.concat(fruits))
+
+// let findFruit = "lemon";
+// const changeFruit = "pineapple"
+// console.log(fruits)
+//
+// if (fruits.includes(findFruit)){
+//   let idx = fruits.indexOf(findFruit)
+//   fruits.splice(idx,1)
+//
+// }
+// console.log(fruits)
+
+// for (let i = 0; i <fruitLength ;i += 1){
+//   console.log(fruits[i])
+// }
+// for (let fruit of fruits) {
+//   console.log(fruit[0].toUpperCase() + fruit.slice(1))
+// }
+
 //
 // for (let fruit of fruits) {
 //
@@ -736,15 +760,13 @@
 //   console.log(i)
 // }
 
-//
-//
 // const user = "vova"
 //
 // console.log(user[0].toUpperCase() + user.slice(1))
-const num = "uncle"
-
-const numToArray = Array.from(num)
-
-const sas = numToArray.toString();
-
-console.log(typeof sas)
+// const num = "uncle"
+//
+// const numToArray = Array.from(num)
+//
+// const sas = numToArray.toString();
+//
+// console.log(typeof sas)
