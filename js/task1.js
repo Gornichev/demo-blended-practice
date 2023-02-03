@@ -793,4 +793,36 @@
 //
 // })(5,6,7)
 
-()
+// (function (a,b,c){
+//
+// })(1,2,4)
+
+// // console.log("a".big())
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//
+//   string = array.join(delimiter)
+//
+//   return string;
+// }
+//
+// console.log(makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''))
+
+
+// function makeStringFromArray (array, delimiter){
+//
+//   return array.join(delimiter)
+// }
+//
+// console.log(makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''))
+
+
+
+
+
+
+
+const makeStringFromArray = (array, delimiter) => {
+  console.log(array.join(delimiter))
+}
+makeStringFromArray(['M', 'a', 'n', 'g', 'o'], '')
