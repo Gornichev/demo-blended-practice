@@ -723,12 +723,12 @@
 // }
 // console.log(calculateEngravingPrice("JavaScript is in my blood", 10))
 
-let fruits = ["apple","orange", "lemon", "kiwi", "strawberries", "banana"]
-
-const newArr =  fruits.splice(0,2,"watermelon", "item")
-const cars = ["bmw","audi"]
-
-console.log(cars.concat(fruits))
+// let fruits = ["apple","orange", "lemon", "kiwi", "strawberries", "banana"]
+//
+// const newArr =  fruits.splice(0,2,"watermelon", "item")
+// const cars = ["bmw","audi"]
+//
+// console.log(cars.concat(fruits))
 
 // let findFruit = "lemon";
 // const changeFruit = "pineapple"
@@ -770,3 +770,27 @@ console.log(cars.concat(fruits))
 // const sas = numToArray.toString();
 //
 // console.log(typeof sas)
+
+// function splitMessage(message, delimiter) {
+//   let words;
+//   // Change code below this line
+//    words = message.split(delimiter)
+//   // Change code above this line
+//   return words;
+// }
+//
+// console.log(splitMessage('best_for_week', '_'))
+// console.log(splitMessage("Mango", ""))
+// console.log(splitMessage('Mango hurries to the train', ' '))
+
+
+// (function (a,b,c){
+//   if(a < b){
+//     console.log("EEE")
+//   } else {
+//     console.log("!!!")
+//   }
+//
+// })(5,6,7)
+
+()
