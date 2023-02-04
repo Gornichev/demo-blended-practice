@@ -816,13 +816,13 @@
 //
 // console.log(makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''))
 
+function calculateTotal(number) {
 
+let sum = 0;
+for (let i = 1; i <= number; i += 1)
 
+  sum += i
+return sum
+  }
 
-
-
-
-const makeStringFromArray = (array, delimiter) => {
-  console.log(array.join(delimiter))
-}
-makeStringFromArray(['M', 'a', 'n', 'g', 'o'], '')
+console.log(calculateTotal(1))
