@@ -424,7 +424,6 @@
 // Change code below this line
 // Change code above this line
 
-
 // const highTemperatures = {
 //   yesterday: 28,
 //   today: 26,
@@ -849,3 +848,56 @@
 // }
 //
 // console.log(calculateTotalPrice([12, 85, 37, 4]))
+
+// function findLongestWord(string) {
+//
+// let srtToArr = string.split(" ");
+// let longWord = srtToArr[0];
+
+
+// for(let i = 0; i < srtToArr.length; i +=1) {
+//
+//  if(srtToArr[i].length > longWord.length) {
+//    longWord = srtToArr[i];
+//  }
+// }
+// return longWord
+// }
+//
+// console.log(findLongestWord("May the force be with you"))
+//   function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//
+//   for(let i =min; i <= max; i += 1){
+//     numbers.push(i)
+//   }
+//
+//
+//   return numbers;
+// }
+//
+// console.log(createArrayOfNumbers(1, 3))
+
+// function filterArray(numbers, value) {
+// const largerNumber = [];
+//
+//   for(let i = 1; i <= numbers.length;i += 1){
+//     if(numbers[i] > value){
+//       largerNumber.push(numbers[i])
+//     }
+//   }
+// return largerNumber
+// }
+//
+// console.log(filterArray([1, 2, 3, 4, 5], 3))
+// function getCommonElements(array1, array2) {
+//   const newArr = [];
+//   for(let i = 0; i < array1.length ; i += 1){
+//
+//    if(array2.includes(array1[i])){
+//      newArr.push(array1[i])
+//    }
+//       }
+// return newArr
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]))
