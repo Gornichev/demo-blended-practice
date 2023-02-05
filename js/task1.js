@@ -901,3 +901,15 @@
 // return newArr
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]))
+
+const user = {
+  name: "Jacques Gluke",
+  tag: "jgluke",
+  location: {
+    country: "Jamaica",
+    city: "Ocho Rios",
+  },
+  hobbies: ["swiming", "music", "sci-fi"],
+};
+
+console.log(user.location.city)
