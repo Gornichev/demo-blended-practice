@@ -816,13 +816,36 @@
 //
 // console.log(makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''))
 
-function calculateTotal(number) {
 
-let sum = 0;
-for (let i = 1; i <= number; i += 1)
 
-  sum += i
-return sum
-  }
-
-console.log(calculateTotal(1))
+// const fruits = ['apple', 'plum', 'pear', 'orange']
+// const friends = ["vova","kolya","petya","olya"]
+//
+//
+// const checkOperations = () => {
+//   let all = []
+//
+//   for (let i = 0; i < friends.length; i += 1) {
+//     all.push(friends[i])
+//   }
+//   return all
+// }
+//
+// console.log(checkOperations(friends))
+//
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+//
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//
+//   for(let i = 0; i < order.length; i += 1 ){
+//     total += order[i]
+//   }
+//
+//   return total;
+// }
+//
+// console.log(calculateTotalPrice([12, 85, 37, 4]))
