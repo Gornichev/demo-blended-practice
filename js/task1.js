@@ -902,14 +902,32 @@
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]))
 
-const user = {
-  name: "Jacques Gluke",
-  tag: "jgluke",
-  location: {
-    country: "Jamaica",
-    city: "Ocho Rios",
-  },
-  hobbies: ["swiming", "music", "sci-fi"],
-};
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   location: {
+//     country: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   hobbies: ["swiming", "music", "sci-fi"],
+// };
+//
+// user.task = ["home-work","video"]
+//
+// console.log(user)
+//
+// // for (let item of user.hobbies){
+// //   console.log(item.length)
+// // }
 
-console.log(user.location.city)
+function getEvenNumbers(start, end) {
+  const evenNumber = []
+for (let i = start; i <= end; i += 1){
+  if(i % 2 === 0){
+    evenNumber.push(i)
+  }
+}
+return evenNumber
+}
+
+console.log(getEvenNumbers(2, 5))
