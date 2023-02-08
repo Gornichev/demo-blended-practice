@@ -920,14 +920,143 @@
 // //   console.log(item.length)
 // // }
 
-function getEvenNumbers(start, end) {
-  const evenNumber = []
-for (let i = start; i <= end; i += 1){
-  if(i % 2 === 0){
-    evenNumber.push(i)
-  }
-}
-return evenNumber
-}
+// function getEvenNumbers(start, end) {
+//   const evenNumber = []
+// for (let i = start; i <= end; i += 1){
+//   if(i % 2 === 0){
+//     evenNumber.push(i)
+//   }
+// }
+// return evenNumber
+// }
+//
+// console.log(getEvenNumbers(2, 5))
 
-console.log(getEvenNumbers(2, 5))
+// ✅ Логічно і синтаксично згруповані сутності
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const bookKey in book) {
+//  if (book.hasOwnProperty(bookKey)) {
+//    console.log(`${bookKey} has property`)
+//  }
+//
+// }
+// const keys = Object.keys(book)
+// // const value = Object.values(book)
+// console.log(value)
+
+// for(const key of keys) {
+//   // console.log(key)
+// }
+//
+
+// const goods = {
+//   apples: 6,
+//   grapes: 3,
+//   bread: 4,
+//   cheese: 7,
+// };
+//
+// const {apples,grapes,bread,cheese} = goods
+//
+// console.log(`is ${grapes}`)
+
+
+
+// const entries  = Object.entries(goods)
+// console.log(entries)
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+//
+//
+// for (const book of books){
+//   const bookAuthor = [];
+//   bookAuthor.push(book.rating)
+//   console.log(bookAuthor)
+// }
+// console.log(books.length)
+//
+// const first = { propA: 5, propB: 10, propC: 15 , };
+// const second = { propC: 15, propA: 5 };
+// const third = { ...second, ...first };
+// console.log(third)
+
+// const rgb = [200, 255, 100];
+//
+// const [red, ...colors] = rgb;
+//
+// // console.log(red,colors)
+// let a = 100;
+// let b = 200;
+//
+// [a,b] = [200,100]
+// console.log("a", a)
+// console.log("b", b)
+// const getRest = (a,b,...rest) => {
+//   console.log(a,b,rest)
+// }
+//
+// getRest(5,6,7,3,4,7)
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   location: {
+//     country: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+//
+// const {location : {country}} = user;
+// console.log(location,country)
+
+// const vova = {
+//   name : "vova",
+//   age : 19,
+//   active: true,
+// }
+//
+// let sveta = {
+//   ...vova,
+//   shop : true
+// }
+//
+// console.log(sveta,vova)
+//
+// const svetaKeys = Object.keys(sveta)
+//
+// for (let key of svetaKeys) {
+//   console.log(key)
+// }
