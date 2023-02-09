@@ -1046,17 +1046,102 @@
 //   name : "vova",
 //   age : 19,
 //   active: true,
-// }
 //
-// let sveta = {
-//   ...vova,
-//   shop : true
+//   getStreet () {
+//     console.log(this)
+//   }
+//
 // }
+
+
+
 //
 // console.log(sveta,vova)
 //
 // const svetaKeys = Object.keys(sveta)
+// //
+// // for (let key of svetaKeys) {
+// //   console.log(key)
+// // }
+// const generateId = () => {
 //
-// for (let key of svetaKeys) {
-//   console.log(key)
+//   return Math.random().toString().slice(2,5);
 // }
+//
+// console.log(generateId())
+// //
+// const sayHello = () => {
+//   console.log(this)
+// }
+//
+// sayHello()
+//
+// const likes = {
+//   bad : 12,
+//   good : 10,
+//   nice : 2,
+// }
+//
+// console.log(likes["bad"])
+
+// let totalLikes = 0;
+// const value = Object.values(likes)
+//
+//
+// for( let item of value){
+//   totalLikes += likes[item]
+// }
+//
+// // for (const item of likes) {
+// //
+// // }
+// console.log(totalLikes)
+
+// const user = ['kolya', "petya", "olya" , "lena",]
+// const cars = ["mazda","opel","scoda", "renault","Pidar"]
+//
+// const bank = {}
+//
+// for (let i = 0; i < user.length; i += 1) {
+//   bank[user[i]] = cars[i]
+// }
+// console.log(bank)
+// let book = {};
+// const inpKey = prompt("enter name")
+// const inpValue =  prompt("enter value")
+//
+// book[inpKey] = inpValue;
+//
+// console.log(book)
+
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+//
+// apartment.location = {
+//   country : "Jamaica",
+//   city : "Kingston"
+// }
+// apartment.area = 60;
+// console.log(apartment)
+//
+// const emailInputName = "email";
+// const passwordInputName = "password";
+//
+// const credentials = {
+//   // Change code below this line
+//   [emailInputName] : "henry.carter@aptmail.com",
+//   [passwordInputName] : "jqueryismyjam",
+//
+//
+//   // Change code above this line
+// };
