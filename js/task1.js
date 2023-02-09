@@ -972,28 +972,7 @@
 // const entries  = Object.entries(goods)
 // console.log(entries)
 
-// const books = [
-//   {
-//     title: "The Last Kingdom",
-//     author: "Bernard Cornwell",
-//     rating: 8.38,
-//   },
-//   {
-//     title: "На березі спокійних вод",
-//     author: "Роберт Шеклі",
-//     rating: 8.51,
-//   },
-//   {
-//     title: "Сон смішної людини",
-//     author: "Федір Достоєвський",
-//     rating: 7.75,
-//   },
-//   {
-//     title: "Сон смішної людини",
-//     author: "Федір Достоєвський",
-//     rating: 7.75,
-//   },
-// ];
+
 //
 //
 // for (const book of books){
@@ -1053,8 +1032,6 @@
 //
 // }
 
-
-
 //
 // console.log(sveta,vova)
 //
@@ -1075,13 +1052,22 @@
 // }
 //
 // sayHello()
-//
+// //
 // const likes = {
 //   bad : 12,
 //   good : 10,
 //   nice : 2,
 // }
 //
+// const values = Object.values(likes)
+// const keys = Object.keys(likes)
+// let total = {};
+//
+// for (let i = 0; i < values.length; i += 1){
+//   total[values[i]] = keys[i]
+// }
+// console.log(total)
+// //
 // console.log(likes["bad"])
 
 // let totalLikes = 0;
@@ -1145,3 +1131,88 @@
 //
 //   // Change code above this line
 // };
+
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+//
+// const room = Object.create(apartment)
+// room.number = 25;
+//
+// const keys = [];
+// const values = [];
+//
+//
+// for (const apartKey in apartment) {
+//   console.log(apartment.hasOwnProperty(apartKey))
+//
+//
+//   keys.push(apartKey)
+//   values.push(apartment[apartKey])
+// }
+// console.log(keys)
+// // console.log(values)
+// function countProps(object) {
+//   let propCount = 0;
+//   for (const objectKey in object) {
+//     if(object.hasOwnProperty(objectKey)){
+//       propCount += 1
+//     }
+//   }
+//
+//   return propCount;
+// }
+//
+// console.log(countProps({ name: "Mango", age: 2 }))
+
+// function countProps(object) {
+//   let propCount = 0;
+// const keys = Object.keys(object)
+//
+//   for (const key of keys) {
+//     propCount += 1
+//   }
+//   return propCount;
+// }
+// console.log(countProps({ name: 'Mango', age: 2 }))
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "На березі спокійних вод",
+    author: "Роберт Шеклі",
+    rating: 8.51,
+  },
+  {
+    title: "Сон смішної людини",
+    author: "Федір Достоєвський",
+    rating: 7.75,
+  },
+  {
+    title: "Сон смішної людини",
+    author: "Федір Достоєвський",
+    rating: 7.75,
+  },
+];
+const title = "Steven King"
+const myBook = {
+  title,
+  books,
+  // showTitle() {
+  //   for (let item of this.books){
+  //     console.log(item.title)
+  //   }
+  // }
+  addTitle (newBook) {
+   this.books.push(newBook)
+  }
+}
+const newBook = {title: "Best Fish", author: "Yurii", rating: 9.6,}
+myBook.addTitle(newBook)
+console.log(books)
