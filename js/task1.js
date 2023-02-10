@@ -1177,42 +1177,92 @@
 //   return propCount;
 // }
 // console.log(countProps({ name: 'Mango', age: 2 }))
+//
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+// const title = "Steven King"
+// const myBook = {
+//   title,
+//   books,
+//   // showTitle() {
+//   //   for (let item of this.books){
+//   //     console.log(item.title)
+//   //   }
+//   // }
+//   addTitle (newBook) {
+//    this.books.push(newBook)
+//   }
+// }
+// const newBook = {title: "Best Fish", author: "Yurii", rating: 9.6,}
+// myBook.addTitle(newBook)
+// console.log(books)
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "На березі спокійних вод",
-    author: "Роберт Шеклі",
-    rating: 8.51,
-  },
-  {
-    title: "Сон смішної людини",
-    author: "Федір Достоєвський",
-    rating: 7.75,
-  },
-  {
-    title: "Сон смішної людини",
-    author: "Федір Достоєвський",
-    rating: 7.75,
-  },
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//
+//   const values = Object.values(salaries)
+//   for (let item of values){
+//     totalSalary += item
+//   }
+//
+//   return totalSalary;
+// }
+//
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }))
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+//
+// function getProductPrice(productName) {
+//   for(const product of products) {
+//     console.log(product.name)
+//     if (product.name === productName) {
+//       return product.price
+//     }
+//
+//   }
+//   return null
+// }
+
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
 ];
-const title = "Steven King"
-const myBook = {
-  title,
-  books,
-  // showTitle() {
-  //   for (let item of this.books){
-  //     console.log(item.title)
-  //   }
-  // }
-  addTitle (newBook) {
-   this.books.push(newBook)
-  }
+
+function getAllPropValues(propName) {
+
+
 }
-const newBook = {title: "Best Fish", author: "Yurii", rating: 9.6,}
-myBook.addTitle(newBook)
-console.log(books)
