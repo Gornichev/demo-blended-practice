@@ -1084,7 +1084,10 @@
 // console.log(totalLikes)
 
 // const user = ['kolya', "petya", "olya" , "lena",]
-// const cars = ["mazda","opel","scoda", "renault","Pidar"]
+// const cars = ["mazda","opel","scoda", "renault",]
+// console.log(user)
+
+
 //
 // const bank = {}
 //
@@ -1164,9 +1167,7 @@
 //
 //   return propCount;
 // }
-//
 // console.log(countProps({ name: "Mango", age: 2 }))
-
 // function countProps(object) {
 //   let propCount = 0;
 // const keys = Object.keys(object)
@@ -1178,46 +1179,7 @@
 // }
 // console.log(countProps({ name: 'Mango', age: 2 }))
 //
-// const books = [
-//   {
-//     title: "The Last Kingdom",
-//     author: "Bernard Cornwell",
-//     rating: 8.38,
-//   },
-//   {
-//     title: "На березі спокійних вод",
-//     author: "Роберт Шеклі",
-//     rating: 8.51,
-//   },
-//   {
-//     title: "Сон смішної людини",
-//     author: "Федір Достоєвський",
-//     rating: 7.75,
-//   },
-//   {
-//     title: "Сон смішної людини",
-//     author: "Федір Достоєвський",
-//     rating: 7.75,
-//   },
-// ];
-// const title = "Steven King"
-// const myBook = {
-//   title,
-//   books,
-//   // showTitle() {
-//   //   for (let item of this.books){
-//   //     console.log(item.title)
-//   //   }
-//   // }
-//   addTitle (newBook) {
-//    this.books.push(newBook)
-//   }
-// }
-// const newBook = {title: "Best Fish", author: "Yurii", rating: 9.6,}
-// myBook.addTitle(newBook)
-// console.log(books)
-
-
+//
 // function countTotalSalary(salaries) {
 //   let totalSalary = 0;
 //
@@ -1225,10 +1187,8 @@
 //   for (let item of values){
 //     totalSalary += item
 //   }
-//
 //   return totalSalary;
 // }
-//
 // console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }))
 // const colors = [
 //   { hex: "#f44336", rgb: "244,67,54" },
@@ -1254,15 +1214,126 @@
 //   }
 //   return null
 // }
-
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
+// function getAllPropValues(propName) {
+//
+//   const result = [];
+//
+//   for (const product of products) {
+//     if (product[propName]){
+//       result.push(product[propName])
+//     }
+//
+//   }
+//   return result
+// }
+//
+// getAllPropValues("quantity")
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+// console.log(products.constructor)
+//
+// function calculateTotalPrice(productName) {
+//   for (const product of products){
+//
+//     if(product.name === productName){
+//       return product.price * product.quantity
+//     }
+//
+//   }
+//   return  0;
+// }
+//
+// calculateTotalPrice("Radar") //повертає 5200
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "На березі спокійних вод",
+    author: "Роберт Шеклі",
+    rating: 8.51,
+  },
+  {
+    title: "Сон смішної людини",
+    author: "Федір Достоєвський",
+    rating: 7.75,
+  },
+  {
+    title: "Сон смішної людини",
+    author: "Федір Достоєвський",
+    rating: 7.75,
+  },
 ];
 
-function getAllPropValues(propName) {
+const title = "Steven King"
 
+const myBook = {
+title,
+books,
+showTitle() {
+  for (let item of this.books){
+  }
+},
 
+addTitle (newBook) {
+ this.books.push(newBook)
+},
+
+updateTitle (findElement, updateElement) {
+  for (const item of this.books){
+    if(item.title === findElement) {
+      item.title = updateElement
+    }
+  }
+},
+
+removeTitle (findElement){
+for (const item of this.books){
+if(item.title === findElement){
+  let i = this.books.indexOf(item)
+  this.books.splice(i)
 }
+}
+}
+}
+
+// myBook.showTitle()
+// myBook.updateTitle("Сон смішної людини", "Сон пухлої людини")
+// const newBook = {title: "Best Fish", author: "Yurii", rating: 9.6,}
+// myBook.addTitle(newBook)
+// myBook.removeTitle("Сон смішної людини")
+// console.log(books)
+
+const number = [2,5,5,1,8,5,9,5,23,5,6,66,6,7]
+
+console.log(number.constructor)
+// const changeNumber = (findNumber,updateNumber) => {
+//   for (let i = 0; i < number.length; i += 1 ){
+//
+//     if (number[i] === findNumber){
+//       number[i]  = updateNumber
+//     }
+//   }
+// }
+// changeNumber(5,0)
+
+// const removeNumber = (remNum) => {
+//   for (let i = 0; i < number.length; i += 1 ){
+//
+//     if(number[i] === remNum){
+//       number[i] = undefined
+//       // const idx = number.indexOf(i)
+//       //  number.splice(idx,1)
+//
+//     }
+//   }
+//
+// }
+//
+// removeNumber(5)
