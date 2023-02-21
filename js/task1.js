@@ -817,7 +817,35 @@
 
 
 
-// const fruits = ['apple', 'plum', 'pear', 'orange']
+// let fruits = ['apple', 'plum', 'pear', ]
+//
+// function myPush (...fruit){
+//  return  fruits =  [...fruits, ...fruit ]
+// }
+//
+// myPush('banana','bear','apple2')
+// console.log(fruits)
+// function multiply(...args) {
+//   console.log(args); // масив усіх аргументів
+// }
+//
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+
+
+// const  arr = [3,2,5,6];
+// function arraySum(array){
+//   let sum = 0;
+//   for(let i = 0; i < array.length; i+=){
+//     sum += array[i];
+//   }
+//   console.log(sum);
+// } arraySum(arr);
+
+
+
 // const friends = ["vova","kolya","petya","olya"]
 //
 //
@@ -971,7 +999,6 @@
 
 // const entries  = Object.entries(goods)
 // console.log(entries)
-
 
 //
 //
@@ -1248,71 +1275,109 @@
 // }
 //
 // calculateTotalPrice("Radar") //повертає 5200
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "На березі спокійних вод",
-    author: "Роберт Шеклі",
-    rating: 8.51,
-  },
-  {
-    title: "Сон смішної людини",
-    author: "Федір Достоєвський",
-    rating: 7.75,
-  },
-  {
-    title: "Сон смішної людини",
-    author: "Федір Достоєвський",
-    rating: 7.75,
-  },
-];
 
-const title = "Steven King"
-
-const myBook = {
-title,
-books,
-showTitle() {
-  for (let item of this.books){
-  }
-},
-
-addTitle (newBook) {
- this.books.push(newBook)
-},
-
-updateTitle (findElement, updateElement) {
-  for (const item of this.books){
-    if(item.title === findElement) {
-      item.title = updateElement
-    }
-  }
-},
-
-removeTitle (findElement){
-for (const item of this.books){
-if(item.title === findElement){
-  let i = this.books.indexOf(item)
-  this.books.splice(i)
-}
-}
-}
-}
-
+// =================BOOK==================
+// let books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//     id : 1,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//     id : 2,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//     id : 3,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+//
+// const title = "Steven King"
+//
+// const myBook = {
+// title,
+// books,
+//
+// showTitle() {
+//   for (let item of this.books){
+//     // console.log(item.author)
+//   }
+// },
+// //
+// // addTitle (newBook) {
+// //
+// //  this.books.push(newBook)
+// // },
+// addTitle ({title, author, rating}) {
+//  this.books = [...this.books, {title, author, rating, id : this.generateId() } ]
+//
+//
+//   // return this.books.push({title, author, rating, id : this.generateId() })
+//   // this.books.push(newBook) or //
+// },
+//
+//   updateTitle (findElement, updateElement) {
+//   for (const item of this.books){
+//     if(item.title === findElement) {
+//       item.title = updateElement
+//     }
+//   }
+// },
+//
+// removeTitle (findElement){
+// for (const item of this.books){
+// if(item.title === findElement){
+//   let i = this.books.indexOf(item)
+//   this.books.splice(i)
+// }
+// }
+// },
+//
+// generateId () {
+//   return Math.random().toString().slice(2,4)
+//   // return Date.now()
+// }
+//
+// }
 // myBook.showTitle()
 // myBook.updateTitle("Сон смішної людини", "Сон пухлої людини")
-// const newBook = {title: "Best Fish", author: "Yurii", rating: 9.6,}
-// myBook.addTitle(newBook)
+//
+// // const newBook = {
+// //   title: "Best Fish",
+// //   author: "Yurii",
+// //   rating: 9.5,
+// // }
+//
+// const randomBook = {
+//   title: "Wtf",
+//   author: "Olya",
+//   rating: 10,
+// }
+//
+// myBook.addTitle(randomBook)
+//
 // myBook.removeTitle("Сон смішної людини")
-// console.log(books)
+// // console.log(books)
 
-const number = [2,5,5,1,8,5,9,5,23,5,6,66,6,7]
 
-console.log(number.constructor)
+//
+// const number2 = [...number]
+//
+// console.log(number)
+// console.log(number2)
+// //
+// console.log(number.constructor)
 // const changeNumber = (findNumber,updateNumber) => {
 //   for (let i = 0; i < number.length; i += 1 ){
 //
@@ -1337,3 +1402,346 @@ console.log(number.constructor)
 // }
 //
 // removeNumber(5)
+
+// const objA = {
+//   a: 1,
+//   b: 2,
+// }
+// const objB = Object.create(objA)
+//
+// objA.a = 10;
+// objB.b = 20;
+// objB.a = 30;
+//
+// console.log(objA)
+// console.log(objB)
+//
+// for (const objBKey in objB) {
+//    if (objA.hasOwnProperty(objBKey)){
+//      console.log('!!')
+//    }
+//
+// }
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const { yesterday : highYesterday,
+//   today : highToday,
+//   tomorrow : highTomorrow,
+//   icon : highIcon =  "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+// }
+//
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+// // Change code above this line
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#175888", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#a49b23", rgb: "255,235,59" },
+// ];
+//
+// for (let {hex,rgb} of colors) {
+//   console.log(rgb)
+// }
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// let {
+//   today : {
+//     low : lowToday,
+//     high : highToday,
+//     icon : todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   },
+//   tomorrow : {
+//     low : lowTomorrow,
+//     high : highTomorrow,
+//     icon : tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg",
+//   }
+//
+// } = forecast;
+//
+//
+// console.log(highToday)
+// const newBook = {title: "Best Fish", author: "Yurii", rating: 9.6}
+//
+// function findBook (obj) {
+// let arr = [];
+// arr.push(obj)
+//   console.log(arr)
+//
+// }
+// findBook(newBook)
+// function calculateMeanTemperature(forecast) {
+//   const todayLow = forecast.today.low;
+//   const todayHigh = forecast.today.high;
+//   const tomorrowLow = forecast.tomorrow.low;
+//   const tomorrowHigh = forecast.tomorrow.high;
+
+// const {
+//   today : {
+//     low : todayLow,
+//     high : todayHigh
+//   },
+//   tomorrow :{
+//     low: tomorrowLow,
+//     high : tomorrowHigh,
+//   }
+//
+// } = forecast
+//
+//
+//
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} })
+
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = {
+// ...defaultSettings,
+//   ...overrideSettings
+// };
+//
+// console.log(finalSettings)
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, propD: 20 };
+//
+// const third = {
+//   ...first,
+//   ...second
+// };
+// console.log(third); // { propA: 5, propB: 10, propC: 15, propD: 20 }
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//
+//   const newJbj = {
+//
+//     completed,
+//     category,
+//     priority,
+//     ...data
+//   }
+//   console.log(newJbj)
+// }
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })
+
+// function findMatches([...args],...rest) {
+//   const matches = [];
+//
+// // for (let i = 0; i <= args.length; i += 1){
+//
+//   for (let i = 0; i < rest.length; i += 1){
+//
+//     if(args.includes(rest[i])){
+//       matches.push(rest[i])
+//     // }
+//   }
+// }
+//   console.log(matches)
+// }
+// findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2) ///[17, 89, 2]
+// // findMatches([63, 11, 8, 29], 4, 7, 16)
+
+// const cart = {
+//   items: [],
+//   getItems() {
+//     return this.items
+//   },
+//   add({name,price}){
+//
+//    return this.items = [...this.items,{name,price}]
+//
+//   },
+//   remove(productName){
+//
+//     for (let i = 0; i < this.items.length; i += 1){
+//     const {name} = this.items[i]
+//
+//       if(name === productName){
+//         return this.items.splice([i],1)
+//       }
+//     }
+//   },
+//   clear(){
+//     return this.items = []
+//   },
+//
+//   countTotalPrice() {
+//     const {items} = this.items
+//
+//     let total = 0;
+//     for (let {price} of items) {
+//       total += price
+//     }
+// return total
+//   }
+//
+// }
+// cart.getItems();
+// cart.add({name: "apple", price: 5});
+// cart.add({name:"lemon", price: 5});
+// cart.add({name:"Orange", price: 15});
+// cart.add({name:"Strawberry", price: 40});
+// cart.add({ name:"watermelon", price: 10});
+//
+//
+// cart.remove("Orange");
+// console.log(cart.items)
+// console.log(cart.countTotalPrice())
+// cart.clear();
+
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//
+//     for (let i = 0; i < this.books.length; i++) {
+//
+//       if(this.books[i] === oldName) {
+//         this.books[i] = newName;
+//         return
+//       }
+//     }
+//   },
+// };
+//
+// bookShelf.updateBook("Haze", "Dungeon chronicles")  ///["The last kingdom", "Dungeon chronicles", "The guardian of dreams"]
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+// for (let i = 0; i < this.potions.length ; i += 1) {
+//
+//   if (this.potions[i] === oldName) {
+//     this.potions[i] = newName;
+//   }
+//
+// }
+//   },
+// };
+//
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//    for (let item of this.potions){
+//      console.log(item.name)
+//    }
+//
+//   },
+//
+//   addPotion(newPotion) {
+//     if (this.potions.includes(newPotion)) {
+//       return `Error! Potion ${newPotion} is already in your inventory!`;
+//     }
+//
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     const potionIndex = this.potions.indexOf(potionName);
+//
+//     if (potionIndex === -1) {
+//       return `Potion ${potionName} is not in inventory!`;
+//     }
+//
+//     this.potions.splice(potionIndex, 1);
+//   },
+//   updatePotionName(oldName, newName) {
+//     const potionIndex = this.potions.indexOf(oldName);
+//
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
+//
+//     this.potions.splice(potionIndex, 1, newName);
+//   },
+//   // Change code above this line
+// };
+// // console.log(atTheOldToad.potions)
+// atTheOldToad.getPotions();
+
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+// ];
+//
+// const nameArr = students.map(student => student.name)
+// console.log(nameArr)
+//
+//
+// const values = [51, -3, 27, 21, -68, 42, -37];
+//
+// const positiveValues = values.filter(value => value > 22)
+// console.log(positiveValues)
+
+// const students = [
+//   { name: "Манго", courses: ["математика", "фізика"] },
+//   { name: "Полі", courses: ["інформатика", "математика"] },
+//   { name: "Ківі", courses: ["фізика", "біологія"] },
+// ]
+// const allCourses = students.flatMap(student => student.courses);
+//
+// console.log(allCourses)
+//
+// // const uniqueCourses = allCourses.filter((course, index, array) => array.indexOf(course) === index
+// // );
+// const uniqueCourses = allCourses.filter((course,index,array) => array.indexOf(course) === index)
+//
+// console.log(uniqueCourses)
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Полі", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Ківі", score: 94 },
+//   { name: "Х'юстон", score: 64 },
+// ];
+//
+// const totalScore = students.reduce((total, student) => {
+//
+//   return total + student.score;
+// }, 0);
+//
+//
+// const scores = [61, 19, 74, 35, 92, 56];
+//
+// const copyScores = [...scores].sort((a,b) => a < b);
+//
+document.addEventListener('click',buttonText)
+
+function buttonText(){
+  console.log("!!!!!")
+}
