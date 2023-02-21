@@ -1741,10 +1741,14 @@
 //
 // const copyScores = [...scores].sort((a,b) => a < b);
 
+// const buttonRef = document.querySelector(".userButton")
+// buttonRef.addEventListener('click',getTextOnButton)
+//
+// function getTextOnButton (){
+//   console.log("WTF?" +  Date.now())
+// }
 
-const buttonRef = document.querySelector(".userButton")
-buttonRef.addEventListener('click',getTextOnButton)
-
-function getTextOnButton (){
-  alert("WTF?")
+const timerFunc = () => {
+  console.log('!!!')
 }
+setTimeout(timerFunc,2000)
