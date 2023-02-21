@@ -1733,16 +1733,18 @@
 // const totalScore = students.reduce((total, student) => {
 //
 //   return total + student.score;
-// }, 0);
-//
-//
 // const scores = [61, 19, 74, 35, 92, 56];
 //
-// const copyScores = [...scores].sort((a,b) => a < b);
-// const copyScores = [...scores].sort((a,b) => a < b);
+// // }, 0);
+// //
+// ////
 //
-document.addEventListener('click',buttonText)
+// const copyScores = [...scores].sort((a,b) => a < b);
 
-function buttonText(){
-  console.log("!!!!!")
+
+const buttonRef = document.querySelector(".userButton")
+buttonRef.addEventListener('click',getTextOnButton)
+
+function getTextOnButton (){
+  alert("WTF?")
 }
