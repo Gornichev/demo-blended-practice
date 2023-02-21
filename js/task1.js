@@ -1739,6 +1739,7 @@
 // const scores = [61, 19, 74, 35, 92, 56];
 //
 // const copyScores = [...scores].sort((a,b) => a < b);
+// const copyScores = [...scores].sort((a,b) => a < b);
 //
 document.addEventListener('click',buttonText)
 
