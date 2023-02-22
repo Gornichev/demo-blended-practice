@@ -19,7 +19,3 @@ const welcomeFunction = () => {
 const errorFunction = () => {
   console.log("error")
 }
-//
-// const errorFunction = () => {
-//   console.log("error")
-// }
