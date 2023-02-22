@@ -5,3 +5,21 @@
  */
 
 
+const mainFunction = (array,callback) => {
+
+
+
+}
+
+
+const welcomeFunction = () => {
+  console.log("Welcome")
+}
+
+const errorFunction = () => {
+  console.log("error")
+}
+//
+// const errorFunction = () => {
+//   console.log("error")
+// }
